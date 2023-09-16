@@ -10,6 +10,20 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			let largestNumber = arr[0];
+			let secondlargestNumber = arr[0];
+
+			for(let i=0;i<arr.length;i++){
+				if(arr[i] > largestNumber){
+				secondlargestNumber = largestNumber;
+					largestNumber = arr[i];
+				}
+				else if(arr[i] > secondlargestNumber){
+					secondlargestNumber = arr[i];
+					
+				}
+			}
+			return secondlargestNumber;
 			
 		}
 
